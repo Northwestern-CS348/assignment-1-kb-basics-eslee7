@@ -43,8 +43,8 @@ class KnowledgeBase(object):
         Returns:
             ListOfBindings|False - ListOfBindings if result found, False otherwise
         """
+        print("Asking {!r}".format(fact))
         if isinstance(fact, Fact):
-            print("Asking {!r}".format(fact))
             is_match = False
             bindings_list = ListOfBindings()
             for kb_fact in self.facts:
